@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- SEO Meta -->
+        <title>Wind And Waves Restaurant | Lakeside Dining in Bhopal</title>
+        <meta name="description" content="Discover Wind And Waves Restaurant in Shymala Hills, Bhopal. Enjoy delicious Indian and continental cuisine, a relaxing ambiance and beautiful lake views.">
+        <meta name="keywords" content="Wind And Waves, restaurant Bhopal, lakeside dining, Shymala Hills, Indian cuisine, continental, bar and grill, lake view restaurant">
+        <!-- Open Graph -->
+        <meta property="og:title" content="Wind And Waves Restaurant | Lakeside Dining in Bhopal">
+        <meta property="og:description" content="Discover Wind And Waves Restaurant in Shymala Hills, Bhopal. Enjoy delicious Indian and continental cuisine, a relaxing ambiance and beautiful lake views.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=630&fit=crop">
+        <meta property="og:url" content="https://windandwavesbhopal.com">
+        <!-- Bootstrap 5.3 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Google Fonts: Playfair Display, Poppins, Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <!-- AOS CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Custom CSS -->
+        <style>
+        /* ===== ROOT & GLOBAL ===== */
+        :root {
+            --bg-primary: #071B26;
+            --bg-secondary: #0D2935;
+            --bg-card: #123744;
+            --ocean-teal: #087E8B;
+            --aqua: #27C2C9;
+            --gold: #D6B36A;
+            --cream: #F6F1E8;
+            --white: #FFFFFF;
+            --muted: #B7C8CC;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Poppins', sans-serif;
+            --font-label: 'Montserrat', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-weight: 300;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        a { text-decoration: none; transition: all 0.3s ease; }
+        a:hover { color: var(--aqua); }
+
+        .text-gold { color: var(--gold) !important; }
+        .text-aqua { color: var(--aqua) !important; }
+        .text-muted-custom { color: var(--muted) !important; }
+        .bg-primary-custom { background-color: var(--bg-primary) !important; }
+        .bg-secondary-custom { background-color: var(--bg-secondary) !important; }
+        .bg-card-custom { background-color: var(--bg-card) !important; }
+
+        .section-padding { padding: 100px 0; }
+        .section-label {
+            font-family: var(--font-label);
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .divider-gold {
+            width: 60px;
+            height: 2px;
+            background: var(--gold);
+            margin: 20px auto 30px;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn-gold {
+            background: var(--gold);
+            color: var(--bg-primary);
+            font-family: var(--font-label);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 14px 32px;
+            border: 2px solid var(--gold);
+            border-radius: 0;
+            transition: all 0.4s ease;
+        }
+        .btn-gold:hover {
+            background: transparent;
+            color: var(--gold);
+            border-color: var(--gold);
+        }
+
+        .btn-outline-light-custom {
+            background: transparent;
+            color: var(--white);
+            font-family: var(--font-label);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 14px 32px;
+            border: 2px solid rgba(255,255,255,0.6);
+            border-radius: 0;
+            transition: all 0.4s ease;
+        }
+        .btn-outline-light-custom:hover {
+            background: var(--white);
+            color: var(--bg-primary);
+            border-color: var(--white);
+        }
+
+        .btn-aqua {
+            background: var(--aqua);
+            color: var(--bg-primary);
+            font-family: var(--font-label);
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 14px 32px;
+            border: 2px solid var(--aqua);
+            border-radius: 0;
+            transition: all 0.4s ease;
+        }
+        .btn-aqua:hover {
+            background: transparent;
+            color: var(--aqua);
+            border-color: var(--aqua);
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            padding: 20px 0;
+            transition: all 0.4s ease;
+            background: transparent;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1050;
+        }
+        .navbar.scrolled {
+            background: rgba(7, 27, 38, 0.97);
+            padding: 12px 0;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+        }
+        .navbar-brand {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--white) !important;
+            letter-spacing: 2px;
+        }
+        .navbar-brand span { color: var(--gold); }
+        .navbar-brand small {
+            display: block;
+            font-family: var(--font-label);
+            font-size: 0.55rem;
+            letter-spacing: 4px;
+            color: var(--muted);
+            font-weight: 400;
+            margin-top: -4px;
+        }
+        .nav-link {
+            color: rgba(255,255,255,0.85) !important;
+            font-family: var(--font-label);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 8px 18px !important;
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 18px;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after { width: calc(100% - 36px); }
+        .nav-link:hover { color: var(--gold) !important; }
+        .navbar-toggler {
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 6px 10px;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        .btn-book-nav {
+            background: var(--gold);
+            color: var(--bg-primary);
+            font-family: var(--font-label);
+            font-weight: 600;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        .btn-book-nav:hover {
+            background: var(--aqua);
+            color: var(--bg-primary);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=85') center/cover no-repeat;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(7,27,38,0.75) 0%, rgba(7,27,38,0.6) 50%, rgba(7,27,38,0.9) 100%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+        .hero-subtitle-top {
+            font-family: var(--font-label);
+            font-size: 0.8rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+        .hero h1 em {
+            font-style: italic;
+            color: var(--aqua);
+        }
+        .hero p {
+            font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+            color: rgba(255,255,255,0.85);
+            max-width: 680px;
+            margin: 0 auto 35px;
+            font-weight: 300;
+        }
+        .hero-rating {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(13,41,53,0.8);
+            border: 1px solid rgba(214,179,106,0.4);
+            padding: 10px 24px;
+            margin-top: 30px;
+            font-family: var(--font-label);
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+        .hero-rating i { color: var(--gold); }
+        .hero-rating span { color: var(--muted); }
+
+        /* Animated Waves at bottom of hero */
+        .hero-waves {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            z-index: 2;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C150,20 300,100 450,60 C600,20 750,100 900,60 C1050,20 1200,100 1350,60 L1350,120 L0,120 Z' fill='%23071B26' opacity='0.9'/%3E%3C/svg%3E") repeat-x;
+            background-size: 1200px 100px;
+            animation: waveMove 18s linear infinite;
+        }
+        .wave:nth-child(2) {
+            animation-duration: 24s;
+            animation-direction: reverse;
+            opacity: 0.6;
+            bottom: 15px;
+        }
+        .wave:nth-child(3) {
+            animation-duration: 30s;
+            opacity: 0.4;
+            bottom: 30px;
+        }
+        @keyframes waveMove {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* ===== ABOUT ===== */
+        .about-img-wrap {
+            position: relative;
+        }
+        .about-img-wrap img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border: 1px solid rgba(214,179,106,0.3);
+        }
+        .about-img-accent {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 180px;
+            height: 180px;
+            border: 2px solid var(--gold);
+            z-index: -1;
+        }
+        .about-text .lead {
+            color: var(--muted);
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+        .about-decor {
+            width: 50px;
+            height: 2px;
+            background: var(--gold);
+            margin-bottom: 25px;
+        }
+
+        /* ===== HIGHLIGHTS ===== */
+        .highlight-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(39,194,201,0.1);
+            padding: 45px 30px;
+            height: 100%;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .highlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 0; height: 3px;
+            background: var(--gold);
+            transition: width 0.4s ease;
+        }
+        .highlight-card:hover::before { width: 100%; }
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(214,179,106,0.3);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+        .highlight-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .highlight-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+        .highlight-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* ===== MENU ===== */
+        .menu-filter-btn {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.15);
+            color: var(--muted);
+            font-family: var(--font-label);
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 10px 24px;
+            margin: 4px;
+            transition: all 0.3s ease;
+        }
+        .menu-filter-btn:hover, .menu-filter-btn.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: var(--bg-primary);
+        }
+        .menu-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.05);
+            overflow: hidden;
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        .menu-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            border-color: rgba(214,179,106,0.3);
+        }
+        .menu-card-img {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        .menu-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .menu-card:hover .menu-card-img img {
+            transform: scale(1.1);
+        }
+        .menu-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(7,27,38,0.85);
+            color: var(--gold);
+            font-family: var(--font-label);
+            font-size: 0.65rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border: 1px solid rgba(214,179,106,0.4);
+        }
+        .menu-card-body {
+            padding: 25px;
+        }
+        .menu-card-body h5 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+        }
+        .menu-card-body p {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-bottom: 0;
+        }
+        .menu-price-note {
+            font-family: var(--font-label);
+            font-size: 0.7rem;
+            color: var(--aqua);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 12px;
+            display: block;
+        }
+
+        /* ===== SIGNATURE DINING ===== */
+        .signature-img {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            object-fit: cover;
+        }
+        .signature-content {
+            padding: 40px;
+        }
+        .signature-content h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            margin-bottom: 20px;
+        }
+        .signature-content p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        .wave-pattern {
+            width: 120px;
+            height: 20px;
+            margin-top: 25px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20'%3E%3Cpath d='M0,10 Q15,0 30,10 T60,10 T90,10 T120,10' fill='none' stroke='%23D6B36A' stroke-width='1.5'/%3E%3C/svg%3E") repeat-x;
+            opacity: 0.7;
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            margin-bottom: 24px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.6s ease, filter 0.4s ease;
+        }
+        .gallery-item.tall img { height: 400px; }
+        .gallery-item:hover img {
+            transform: scale(1.08);
+            filter: brightness(0.75);
+        }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(7,27,38,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .gallery-item:hover .gallery-overlay { opacity: 1; }
+        .gallery-overlay i {
+            color: var(--white);
+            font-size: 2rem;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(7,27,38,0.97);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            object-fit: contain;
+            border: 1px solid rgba(214,179,106,0.3);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 2.2rem;
+            cursor: pointer;
+            transition: color 0.3s;
+            z-index: 2001;
+        }
+        .lightbox-close:hover { color: var(--gold); }
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(13,41,53,0.8);
+            border: 1px solid rgba(214,179,106,0.3);
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+        .lightbox-nav:hover { background: var(--gold); color: var(--bg-primary); }
+        .lightbox-prev { left: 25px; }
+        .lightbox-next { right: 25px; }
+
+        /* ===== REVIEWS ===== */
+        .review-swiper {
+            padding-bottom: 60px !important;
+        }
+        .review-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 40px 32px;
+            height: 100%;
+            position: relative;
+        }
+        .review-card .quote-icon {
+            font-size: 2.5rem;
+            color: rgba(214,179,106,0.25);
+            position: absolute;
+            top: 20px;
+            right: 25px;
+        }
+        .review-stars {
+            color: var(--gold);
+            font-size: 0.9rem;
+            margin-bottom: 18px;
+            letter-spacing: 2px;
+        }
+        .review-text {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+            font-style: italic;
+            margin-bottom: 22px;
+        }
+        .review-source {
+            font-family: var(--font-label);
+            font-size: 0.7rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .review-source i { color: var(--aqua); margin-right: 6px; }
+        .review-rating-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--bg-card);
+            border: 1px solid rgba(214,179,106,0.3);
+            padding: 15px 30px;
+            margin-bottom: 40px;
+        }
+        .review-rating-badge .rating-number {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .review-rating-badge .rating-detail {
+            font-family: var(--font-label);
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: var(--muted);
+            text-align: left;
+        }
+        .review-rating-badge .rating-detail strong { color: var(--white); display: block; }
+
+        /* ===== AMBIENCE CTA ===== */
+        .ambience-section {
+            background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=85') center/cover no-repeat fixed;
+            position: relative;
+            padding: 140px 0;
+            text-align: center;
+        }
+        .ambience-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(7,27,38,0.78);
+        }
+        .ambience-section .container { position: relative; z-index: 2; }
+        .ambience-section h2 {
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            margin-bottom: 18px;
+        }
+        .ambience-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== RESERVATION ===== */
+        .reservation-form .form-control, .reservation-form .form-select {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--white);
+            padding: 14px 18px;
+            border-radius: 0;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .reservation-form .form-control:focus, .reservation-form .form-select:focus {
+            background: var(--bg-card);
+            border-color: var(--gold);
+            box-shadow: 0 0 0 0.15rem rgba(214,179,106,0.15);
+            color: var(--white);
+        }
+        .reservation-form .form-control::placeholder { color: rgba(183,200,204,0.6); }
+        .reservation-form .form-label {
+            font-family: var(--font-label);
+            font-size: 0.72rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+        .reservation-form .form-select option { background: var(--bg-card); color: var(--white); }
+        .form-note {
+            font-size: 0.78rem;
+            color: var(--muted);
+            font-style: italic;
+        }
+        .form-success-msg {
+            display: none;
+            background: rgba(39,194,201,0.1);
+            border: 1px solid var(--aqua);
+            color: var(--aqua);
+            padding: 14px 20px;
+            font-size: 0.85rem;
+            margin-top: 15px;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 30px;
+            height: 100%;
+            transition: all 0.4s ease;
+        }
+        .contact-card:hover {
+            border-color: rgba(214,179,106,0.3);
+            transform: translateY(-5px);
+        }
+        .contact-card .contact-icon {
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        .contact-card h5 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .contact-card p {
+            color: var(--muted);
+            font-size: 0.88rem;
+            margin: 0;
+        }
+        .contact-card a { color: var(--muted); }
+        .contact-card a:hover { color: var(--gold); }
+        .map-wrap {
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow: hidden;
+            height: 100%;
+            min-height: 380px;
+        }
+        .map-wrap iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 380px;
+            border: 0;
+            filter: grayscale(0.4) contrast(1.1);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #040f16;
+            border-top: 1px solid rgba(214,179,106,0.15);
+            padding: 70px 0 0;
+        }
+        .footer-brand {
+            font-family: var(--font-heading);
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 2px;
+        }
+        .footer-brand span { color: var(--gold); }
+        .footer-tagline {
+            font-family: var(--font-heading);
+            font-style: italic;
+            color: var(--gold);
+            font-size: 1rem;
+            margin-top: 8px;
+        }
+        .footer-desc {
+            color: var(--muted);
+            font-size: 0.88rem;
+            margin-top: 18px;
+            max-width: 320px;
+        }
+        .footer-heading {
+            font-family: var(--font-label);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 22px;
+        }
+        .footer-links { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 10px; }
+        .footer-links a {
+            color: var(--muted);
+            font-size: 0.88rem;
+            transition: all 0.3s;
+        }
+        .footer-links a:hover { color: var(--gold); padding-left: 5px; }
+        .footer-contact-item {
+            display: flex;
+            gap: 12px;
+            color: var(--muted);
+            font-size: 0.88rem;
+            margin-bottom: 15px;
+        }
+        .footer-contact-item i { color: var(--gold); font-size: 1rem; margin-top: 3px; flex-shrink: 0; }
+        .footer-contact-item a { color: var(--muted); }
+        .footer-contact-item a:hover { color: var(--gold); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: 50px;
+            padding: 22px 0;
+        }
+        .footer-bottom p {
+            color: rgba(183,200,204,0.5);
+            font-size: 0.8rem;
+            margin: 0;
+        }
+
+        /* ===== BACK TO TOP & FLOATING ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 46px;
+            height: 46px;
+            background: var(--gold);
+            color: var(--bg-primary);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--aqua); }
+
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 52px;
+            height: 52px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(37,211,102,0.4);
+            transition: all 0.3s;
+        }
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            color: white;
+            box-shadow: 0 8px 30px rgba(37,211,102,0.6);
+        }
+
+        /* ===== SWIPER OVERRIDES ===== */
+        .swiper-button-next, .swiper-button-prev {
+            color: var(--gold) !important;
+            background: rgba(7,27,38,0.7);
+            width: 44px !important;
+            height: 44px !important;
+            border: 1px solid rgba(214,179,106,0.3);
+        }
+        .swiper-button-next::after, .swiper-button-prev::after {
+            font-size: 1rem !important;
+            font-weight: bold;
+        }
+        .swiper-pagination-bullet {
+            background: var(--muted) !important;
+            opacity: 0.4 !important;
+        }
+        .swiper-pagination-bullet-active {
+            background: var(--gold) !important;
+            opacity: 1 !important;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                background: rgba(7,27,38,0.98);
+                padding: 20px;
+                margin-top: 12px;
+                border: 1px solid rgba(255,255,255,0.08);
+            }
+            .nav-link { padding: 10px 0 !important; }
+            .nav-link::after { left: 0; }
+            .btn-book-nav { margin-top: 10px; display: inline-block; }
+            .section-padding { padding: 70px 0; }
+            .about-img-wrap img { height: 380px; }
+            .about-img-accent { display: none; }
+            .signature-content { padding: 30px 10px; }
+            .hero { min-height: 600px; }
+        }
+
+        @media (max-width: 767.98px) {
+            .hero { min-height: 550px; height: auto; padding: 140px 0 100px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-rating { font-size: 0.7rem; padding: 8px 16px; }
+            .section-padding { padding: 55px 0; }
+            .lightbox-nav { width: 40px; height: 40px; font-size: 1.1rem; }
+            .lightbox-prev { left: 10px; }
+            .lightbox-next { right: 10px; }
+            .ambience-section { background-attachment: scroll; }
+            .review-rating-badge { flex-direction: column; text-align: center; gap: 6px; }
+            .gallery-item.tall img { height: 280px; }
+            .floating-whatsapp { bottom: 20px; left: 20px; width: 46px; height: 46px; font-size: 1.3rem; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+        }
+
+        @media (max-width: 575.98px) {
+            .hero h1 { font-size: 1.9rem; }
+            .btn-gold, .btn-outline-light-custom, .btn-aqua { padding: 12px 22px; font-size: 0.75rem; }
+            .menu-filter-btn { font-size: 0.65rem; padding: 8px 16px; }
+        }
+        </style>
+    </head>
+    <body>
+        <!-- ===== NAVBAR ===== -->
+        <nav class="navbar navbar-expand-lg" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    WIND
+                    <span>&</span>
+                    WAVES
+                    <small>RESTAURANT · BAR & GRILL</small>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navMenu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                    <ul class="navbar-nav align-items-lg-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                            <a href="#reservation" class="btn btn-book-nav">
+                                <i class="bi bi-calendar-check me-1"></i>
+                                Book a Table
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-subtitle-top" data-aos="fade-down" data-aos-delay="100">Lakeside Dining · Shymala Hills, Bhopal</p>
+                <h1 data-aos="fade-up" data-aos-delay="200">Where Every Meal
+                    <br>Meets the
+                    <em>Magic</em> of the Lake
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="300">Experience exceptional dining, delightful flavours and breathtaking lake views at Wind And Waves Restaurant, Bhopal.</p>
+                <div data-aos="fade-up" data-aos-delay="400" class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#menu" class="btn btn-gold">Explore Our Menu</a>
+                    <a href="#reservation" class="btn btn-outline-light-custom">Reserve Your Table</a>
+                </div>
+                <div class="hero-rating" data-aos="fade-up" data-aos-delay="500">
+                    <i class="bi bi-star-fill"></i>
+                    <span class="text-white fw-semibold">4.0/5</span>
+                    <span>|</span>
+                    <span>9,199 Google Reviews</span>
+                </div>
+            </div>
+            <div class="hero-waves">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </section>
+        <!-- ===== ABOUT ===== -->
+        <section class="section-padding" id="about">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="about-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80" alt="Elegant lakeside restaurant dining atmosphere with warm lighting" loading="lazy">
+                            <div class="about-img-accent"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-text" data-aos="fade-left">
+                        <span class="section-label">About the Restaurant</span>
+                        <h2 class="section-title">A Beautiful Escape
+                            <br>by the Lake
+                        </h2>
+                        <div class="about-decor"></div>
+                        <p class="lead">Discover Wind And Waves Restaurant, a welcoming dining destination in the scenic surroundings of Shymala Hills, Bhopal. Enjoy delicious Indian and continental flavours in a peaceful atmosphere complemented by beautiful lake views.</p>
+                        <p class="lead">Whether you are planning a relaxed evening, a family dinner or a memorable gathering, experience dining that brings together great food and a beautiful setting.</p>
+                        <a href="#contact" class="btn btn-gold mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== HIGHLIGHTS ===== -->
+        <section class="section-padding bg-secondary-custom">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Why Choose Us</span>
+                    <h2 class="section-title">Restaurant Highlights</h2>
+                    <div class="divider-gold"></div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="highlight-card text-center">
+                            <i class="bi bi-water highlight-icon"></i>
+                            <h4>Scenic Lake Views</h4>
+                            <p>Enjoy a relaxing atmosphere with beautiful surroundings.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="highlight-card text-center">
+                            <i class="bi bi-egg-fried highlight-icon"></i>
+                            <h4>Delicious Cuisine</h4>
+                            <p>Explore flavourful Indian and continental dishes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="highlight-card text-center">
+                            <i class="bi bi-cup-straw highlight-icon"></i>
+                            <h4>Bar &amp; Grill Experience</h4>
+                            <p>Enjoy a welcoming dining and bar atmosphere.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="highlight-card text-center">
+                            <i class="bi bi-people highlight-icon"></i>
+                            <h4>Memorable Moments</h4>
+                            <p>A wonderful setting for family dinners and get-togethers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== MENU ===== -->
+        <section class="section-padding" id="menu">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Our Menu</span>
+                    <h2 class="section-title">Flavours Worth Experiencing</h2>
+                    <div class="divider-gold"></div>
+                    <p class="text-muted-custom" style="max-width: 600px; margin: 0 auto;">A curated selection of our most-loved dishes, prepared with care and served with a view.</p>
+                </div>
+                <!-- Filter Buttons -->
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <button class="menu-filter-btn active" data-filter="all">All</button>
+                    <button class="menu-filter-btn" data-filter="popular">Popular</button>
+                    <button class="menu-filter-btn" data-filter="indian">Indian Specialities</button>
+                    <button class="menu-filter-btn" data-filter="starters">Starters</button>
+                    <button class="menu-filter-btn" data-filter="main">Main Course</button>
+                    <button class="menu-filter-btn" data-filter="beverages">Soups &amp; Beverages</button>
+                    <button class="menu-filter-btn" data-filter="desserts">Desserts</button>
+                </div>
+                <!-- Menu Grid -->
+                <div class="row g-4" id="menuGrid">
+                    <!-- 1. Butter Chicken -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="popular indian main">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Rich and creamy Butter Chicken" loading="lazy">
+                                <span class="menu-badge">Popular</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Butter Chicken</h5>
+                                <p>Tender chicken simmered in a velvety tomato-butter gravy, rich with aromatic spices.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2. Chicken Biryani -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="popular indian main">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Fragrant Chicken Biryani with basmati rice" loading="lazy">
+                                <span class="menu-badge">Popular</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Chicken Biryani</h5>
+                                <p>Fragrant basmati rice layered with marinated chicken and delicate spices, slow-cooked to perfection.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3. Dahi Ke Kebab -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="popular starters indian">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Crispy Dahi Ke Kebab served with mint chutney" loading="lazy">
+                                <span class="menu-badge">Popular</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Dahi Ke Kebab</h5>
+                                <p>Crisp on the outside, soft and creamy inside — a beloved vegetarian starter.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4. Tandoori Chicken -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="popular starters indian">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=600&q=80" alt="Char-grilled Tandoori Chicken with lemon and onions" loading="lazy">
+                                <span class="menu-badge">Popular</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Tandoori Chicken</h5>
+                                <p>Yogurt-marinated chicken roasted in a traditional tandoor, smoky and full of flavour.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5. Paneer Specialities -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="indian main">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80" alt="Paneer Specialities - rich Indian cottage cheese dish" loading="lazy">
+                                <span class="menu-badge">Indian</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Paneer Specialities</h5>
+                                <p>A range of delightful paneer preparations, from creamy curries to tandoori starters.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6. Chicken Sandwich -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="starters">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=600&q=80" alt="Grilled Chicken Sandwich with fresh vegetables" loading="lazy">
+                                <span class="menu-badge">Starter</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Chicken Sandwich</h5>
+                                <p>Grilled chicken layered with fresh greens and sauce in toasted bread — a comforting bite.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 7. Manchow Soup -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="beverages">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80" alt="Hot and spicy Manchow Soup with crispy noodles" loading="lazy">
+                                <span class="menu-badge">Soup</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Manchow Soup</h5>
+                                <p>A spicy and savoury Indo-Chinese soup topped with crispy fried noodles.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8. Tandoori Roti -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="indian main">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Fresh Tandoori Roti served hot" loading="lazy">
+                                <span class="menu-badge">Bread</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Tandoori Roti</h5>
+                                <p>Whole-wheat flatbread baked in the tandoor, perfect with any curry.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9. Coffee -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="beverages">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Freshly brewed hot coffee" loading="lazy">
+                                <span class="menu-badge">Beverage</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Coffee</h5>
+                                <p>Freshly brewed coffee, the perfect companion to a lakeside evening.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10. Cakes -->
+                    <div class="col-md-6 col-lg-4 menu-item" data-category="desserts">
+                        <div class="menu-card">
+                            <div class="menu-card-img">
+                                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" alt="Rich chocolate cake slice" loading="lazy">
+                                <span class="menu-badge">Dessert</span>
+                            </div>
+                            <div class="menu-card-body">
+                                <h5>Cakes</h5>
+                                <p>Indulgent cake selections to sweeten your dining experience.</p>
+                                <span class="menu-price-note">Contact Restaurant for Pricing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <a href="#contact" class="btn btn-gold">Explore Full Menu</a>
+                </div>
+            </div>
+        </section>
+        <!-- ===== SIGNATURE DINING ===== -->
+        <section class="section-padding bg-secondary-custom">
+            <div class="container">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <img
+                            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+                            alt="Elegant dining setup with warm lighting and lake view"
+                            class="signature-img"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="col-lg-6 bg-card-custom d-flex align-items-center" data-aos="fade-left">
+                        <div class="signature-content">
+                            <span class="section-label">Signature Experience</span>
+                            <h2>More Than Just a Meal</h2>
+                            <p>From delicious Indian specialities to refreshing beverages, Wind And Waves offers a welcoming space to enjoy good food, relaxing conversations and memorable moments.</p>
+                            <div class="wave-pattern"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== GALLERY ===== -->
+        <section class="section-padding" id="gallery">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Gallery</span>
+                    <h2 class="section-title">Moments by the Lake</h2>
+                    <div class="divider-gold"></div>
+                </div>
+                <div class="row g-3" id="galleryGrid">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="gallery-item" data-index="0">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Restaurant ambience with warm evening lighting" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="gallery-item tall" data-index="1">
+                            <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800&q=80" alt="Beautiful lake view from the restaurant" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="gallery-item" data-index="2">
+                            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&q=80" alt="Delicious Indian food presentation" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="gallery-item" data-index="3">
+                            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&q=80" alt="Elegant dining arrangements and table settings" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="gallery-item tall" data-index="4">
+                            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80" alt="Restaurant interiors with elegant seating" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="gallery-item" data-index="5">
+                            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80" alt="Evening atmosphere with drinks and appetizers" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <img src="" alt="Gallery preview" id="lightboxImg">
+            <button class="lightbox-nav lightbox-next" id="lightboxNext">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+        <!-- ===== REVIEWS ===== -->
+        <section class="section-padding bg-secondary-custom" id="reviews">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Guest Feedback</span>
+                    <h2 class="section-title">What Our Guests Say</h2>
+                    <div class="divider-gold"></div>
+                    <div class="review-rating-badge">
+                        <span class="rating-number">4.0</span>
+                        <div class="rating-detail">
+                            <strong>⭐ 4.0 / 5</strong>
+                            Based on 9,199 Google Reviews
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper review-swiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <i class="bi bi-quote quote-icon"></i>
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"Delicious Indian dishes with rich, authentic flavours — the Butter Chicken and Biryani are not to be missed."</p>
+                                <span class="review-source">
+                                    <i class="bi bi-google"></i> Review highlight · Google
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <i class="bi bi-quote quote-icon"></i>
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"The crispy Dahi Ke Kebab was a standout — perfectly crisp outside and creamy inside."</p>
+                                <span class="review-source">
+                                    <i class="bi bi-google"></i> Review highlight · Google
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <i class="bi bi-quote quote-icon"></i>
+                                <div class="review-stars">★★★★☆</div>
+                                <p class="review-text">"Beautiful lake views and a peaceful ambiance — a wonderful spot for a relaxing evening."</p>
+                                <span class="review-source">
+                                    <i class="bi bi-google"></i> Review highlight · Google
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <i class="bi bi-quote quote-icon"></i>
+                                <div class="review-stars">★★★★☆</div>
+                                <p class="review-text">"The calming atmosphere by the water makes every meal feel special. Great place to unwind."</p>
+                                <span class="review-source">
+                                    <i class="bi bi-google"></i> Review highlight · Google
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="text-center mt-4" data-aos="fade-up">
+                    <a
+                        href="https://www.google.com/maps/search/Wind+And+Waves+Restaurant+Bhopal"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn btn-outline-light-custom"
+                    >
+                        <i class="bi bi-google me-2"></i>
+                        Read More Reviews
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ===== AMBIENCE ===== -->
+        <section class="ambience-section">
+            <div class="container" data-aos="zoom-in">
+                <span class="section-label">Experience &amp; Ambience</span>
+                <h2>Let the Waves Set the Mood</h2>
+                <p>Good food, beautiful views and moments worth remembering.</p>
+            </div>
+        </section>
+        <!-- ===== RESERVATION ===== -->
+        <section class="section-padding" id="reservation">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5" data-aos="fade-up">
+                            <span class="section-label">Reservation Enquiry</span>
+                            <h2 class="section-title">Your Table Awaits</h2>
+                            <div class="divider-gold"></div>
+                            <p class="text-muted-custom">Planning a special dinner or a relaxing evening? Get in touch with our team to enquire about table availability.</p>
+                        </div>
+                        <form
+                            class="reservation-form"
+                            id="reservationForm"
+                            data-aos="fade-up"
+                            novalidate
+                        >
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="fullName">Full Name *</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fullName"
+                                        placeholder="Your full name"
+                                        required
+                                    >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="phone">Phone Number *</label>
+                                    <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="phone"
+                                        placeholder="+91 XXXXX XXXXX"
+                                        required
+                                    >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="email">Email Address</label>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="you@example.com"
+                                    >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="guests">Number of Guests *</label>
+                                    <select class="form-select" id="guests" required>
+                                        <option value="" disabled selected>Select guests</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                        <option value="7+">7+ Guests</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="date">Preferred Date *</label>
+                                    <input
+                                        type="date"
+                                        class="form-control"
+                                        id="date"
+                                        required
+                                    >
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="time">Preferred Time *</label>
+                                    <input
+                                        type="time"
+                                        class="form-control"
+                                        id="time"
+                                        required
+                                    >
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="requests">Special Requests</label>
+                                    <textarea
+                                        class="form-control"
+                                        id="requests"
+                                        rows="3"
+                                        placeholder="Any dietary requirements or special occasion?"
+                                    ></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-gold px-5">
+                                        <i class="bi bi-whatsapp me-2"></i>
+                                        Submit Enquiry via WhatsApp
+                                    </button>
+                                    <p class="form-note mt-3 mb-0">This form opens WhatsApp with your enquiry details. Your table is not confirmed until the restaurant responds.</p>
+                                </div>
+                            </div>
+                            <div class="form-success-msg" id="formSuccessMsg">
+                                <i class="bi bi-check-circle me-2"></i>
+                                Your enquiry has been prepared. WhatsApp should open — please send the message to complete your enquiry.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== CONTACT ===== -->
+        <section class="section-padding bg-secondary-custom" id="contact">
+            <div class="container">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span class="section-label">Find Us</span>
+                    <h2 class="section-title">Visit Wind And Waves</h2>
+                    <div class="divider-gold"></div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="contact-card">
+                                    <i class="bi bi-geo-alt contact-icon"></i>
+                                    <h5>Address</h5>
+                                    <p>69RJ+M7F, Lake View Road, Near Cafe Coffee Day, Shymala Hills, Bhopal, Madhya Pradesh 462002</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="contact-card">
+                                    <i class="bi bi-telephone contact-icon"></i>
+                                    <h5>Phone</h5>
+                                    <p>
+                                        <a href="tel:+917552661523">+91 755 266 1523</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="contact-card">
+                                    <i class="bi bi-clock contact-icon"></i>
+                                    <h5>Closing Time</h5>
+                                    <p>10:30 PM
+                                        <br>
+                                        <small class="text-muted-custom" style="font-size:0.75rem;">Please verify current timings with the restaurant.</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-wrap gap-3 mt-2">
+                                <a
+                                    href="https://www.google.com/maps/dir/?api=1&destination=Wind+And+Waves+Restaurant+Shymala+Hills+Bhopal"
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn btn-gold flex-grow-1"
+                                >
+                                    <i class="bi bi-signpost-2 me-2"></i>
+                                    Get Directions
+                                </a>
+                                <a href="tel:+917552661523" class="btn btn-aqua flex-grow-1">
+                                    <i class="bi bi-telephone me-2"></i>
+                                    Call Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-left">
+                        <div class="map-wrap">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.929456789!2d77.3795!3d23.2355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWind%20And%20Waves%20Restaurant%20Bhopal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                allowfullscreen
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Wind And Waves Restaurant location on Google Maps"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand">WIND
+                            <span>&</span> WAVES
+                        </div>
+                        <p class="footer-tagline">Where Great Food Meets Beautiful Views.</p>
+                        <p class="footer-desc">A lakeside dining destination in Shymala Hills, Bhopal — offering Indian and continental cuisine, a relaxing ambiance and beautiful lake views.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="footer-heading">Quick Links</h6>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#menu">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#reviews">Reviews</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="footer-heading">Contact Details</h6>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>69RJ+M7F, Lake View Road, Near Cafe Coffee Day, Shymala Hills, Bhopal, MP 462002</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+917552661523">+91 755 266 1523</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="bi bi-clock"></i>
+                            <span>Closes at 10:30 PM
+                                <br>
+                                <small style="opacity:0.6;">(Verify current timings)</small>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="footer-heading">Find Us</h6>
+                        <p class="footer-desc" style="margin-top:0;">Get directions to the restaurant on Google Maps.</p>
+                        <a
+                            href="https://www.google.com/maps/dir/?api=1&destination=Wind+And+Waves+Restaurant+Shymala+Hills+Bhopal"
+                            target="_blank"
+                            rel="noopener"
+                            class="btn btn-outline-light-custom mt-2"
+                            style="padding:10px 20px; font-size:0.72rem;"
+                        >
+                            <i class="bi bi-map me-1"></i>
+                            Google Maps Directions
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom text-center">
+                    <p>&copy; 2025 Wind And Waves Restaurant · Bhopal. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Back to Top -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+        <!-- Floating WhatsApp -->
+        <a
+            href="https://wa.me/917552661523?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20table%20at%20Wind%20And%20Waves%20Restaurant."
+            target="_blank"
+            rel="noopener"
+            class="floating-whatsapp"
+            aria-label="Chat on WhatsApp"
+        >
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <!-- Bootstrap Bundle JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- AOS JS -->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script>
+        // ===== INIT AOS =====
+        AOS.init({
+            duration: 900,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 80
+        });
+
+        // ===== NAVBAR SCROLL =====
+        const navbar = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ===== ACTIVE NAV LINK ON SCROLL =====
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ===== MOBILE NAV CLOSE ON CLICK =====
+        document.querySelectorAll('.nav-link, .btn-book-nav').forEach(link => {
+            link.addEventListener('click', () => {
+                const collapse = document.getElementById('navMenu');
+                if (collapse.classList.contains('show')) {
+                    new bootstrap.Collapse(collapse).hide();
+                }
+            });
+        });
+
+        // ===== MENU FILTER =====
+        const filterBtns = document.querySelectorAll('.menu-filter-btn');
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+
+                menuItems.forEach(item => {
+                    if (filter === 'all') {
+                        item.style.display = '';
+                    } else {
+                        const categories = item.getAttribute('data-category').split(' ');
+                        if (categories.includes(filter)) {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+
+        // ===== GALLERY LIGHTBOX =====
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
+        let currentImgIndex = 0;
+        const galleryImages = [];
+
+        galleryItems.forEach((item, index) => {
+            const img = item.querySelector('img');
+            galleryImages.push({ src: img.src, alt: img.alt });
+            item.addEventListener('click', () => {
+                currentImgIndex = index;
+                openLightbox(index);
+            });
+        });
+
+        function openLightbox(index) {
+            lightboxImg.src = galleryImages[index].src;
+            lightboxImg.alt = galleryImages[index].alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function showPrev() {
+            currentImgIndex = (currentImgIndex - 1 + galleryImages.length) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentImgIndex].src;
+            lightboxImg.alt = galleryImages[currentImgIndex].alt;
+        }
+
+        function showNext() {
+            currentImgIndex = (currentImgIndex + 1) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentImgIndex].src;
+            lightboxImg.alt = galleryImages[currentImgIndex].alt;
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxPrev.addEventListener('click', showPrev);
+        lightboxNext.addEventListener('click', showNext);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === 'ArrowRight') showNext();
+        });
+
+        // ===== REVIEW SWIPER =====
+        new Swiper('.review-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 2 },
+            }
+        });
+
+        // ===== RESERVATION FORM → WHATSAPP =====
+        const form = document.getElementById('reservationForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+            const requests = document.getElementById('requests').value.trim();
+
+            if (!name || !phone || !date || !time || !guests) {
+                alert('Please fill in all required fields (Name, Phone, Date, Time, Guests).');
+                return;
+            }
+
+            const message = `Hello Wind And Waves Restaurant,%0A%0AI would like to enquire about a table booking.%0A%0A👤 Name: ${encodeURIComponent(name)}%0A📞 Phone: ${encodeURIComponent(phone)}${email ? `%0A📧 Email: ${encodeURIComponent(email)}` : ''}%0A📅 Date: ${encodeURIComponent(date)}%0A🕐 Time: ${encodeURIComponent(time)}%0A👥 Guests: ${encodeURIComponent(guests)}${requests ? `%0A📝 Special Requests: ${encodeURIComponent(requests)}` : ''}%0A%0APlease confirm availability. Thank you!`;
+
+            const whatsappUrl = `https://wa.me/917552661523?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+
+            document.getElementById('formSuccessMsg').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('formSuccessMsg').style.display = 'none';
+            }, 8000);
+        });
+
+        // ===== BACK TO TOP =====
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== SMOOTH SCROLL FOR ALL ANCHORS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        </script>
+    </body>
+</html>
